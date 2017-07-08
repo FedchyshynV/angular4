@@ -1,0 +1,30 @@
+
+
+  
+<!--Slider-->    
+    <div id="carousel-1" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+         <li *ngFor="let image of images ;let i = index" [ngClass]="{active : (image.index === 1)}" data-target="#carousel-1"  [attr.data-slide-to]="i" > </li>
+       </ol>   
+     <div class="carousel-inner" role="listbox">
+     <div  *ngFor="let image of images" [ngClass]="{item: true, active : (image.index === 1)}">
+        <img [src]="image.url" alt="">
+        <div class="carousel-caption">
+                  <h3></h3>
+                  <br class="hidden-xs"><br>
+                 <p class="hidden-xs"> </p>
+                 <div class="banner_mouseover-wrap " > <a href="tury_ukraine/splav/index-ukraine-splav.html" class="banner-hover-link " role="button">Интересно <i class="fa fa-arrow-right"></i></a> </div>
+        </div>
+    </div>
+      
+    </div>
+       <!-- Arrow slider-->
+     <a href="#carousel-1" class="left carousel-control" data-slide="prev">
+         <span class="glyphicon glyphicon-chevron-left"></span>
+     </a>
+     <a href="#carousel-1" class="right carousel-control" data-slide="next">
+         <span class="glyphicon glyphicon-chevron-right" ></span>
+     </a>
+    </div>
+<!--End Slider -->
+

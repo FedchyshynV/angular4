@@ -1,0 +1,32 @@
+<!-- Content snipet Ukrain-->
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 text-center header_ukrain text_head">
+              <h2>Наши туры по Украине</h2>
+              <br>
+          </div>  
+        </div>
+    </div>
+
+    <div class="container-fluid" >
+         <div class="row " >
+            <div class=" col-sm-6 col-md-4 img-responsive view hm-zoom" *ngFor="let image of images"><!-- zak-->
+                    <div class="thumbnail ">
+                       <img [src]="image.url" alt="">
+                       <div class="caption">
+                          <div class="mybtn">  <a href="tury_ukraine/all.html#zakarpatia"    class="banner-hover-link">Поехали <i class="fa fa-arrow-right"></i></a></div>
+                       </div>
+                    </div>
+            </div>
+
+        </div>
+
+   </div>
+   <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 text-center header_ukrain_buttom ">
+               <div class="banner_mouseover-wrap">  <a href="tury_ukraine/all.html"     class="banner-hover-link">Все туры по Украине  <i class="fa fa-arrow-right"></i></a> </div>
+          </div>  
+        </div>
+    </div>
+

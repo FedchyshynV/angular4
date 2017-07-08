@@ -1,0 +1,76 @@
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-lg-6">   
+              <div id="carousel-2" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                  <li *ngFor="let image of imagesLeft ;let i = index" [ngClass]="{active : (image.index === 1)}" data-target="#carousel-2"  [attr.data-slide-to]="i" > </li>
+                </ol>   
+              <div class="carousel-inner" role="listbox">
+              <div  *ngFor="let image of imagesLeft" [ngClass]="{item: true, active : (image.index === 1)}">
+                  <img [src]="image.url" alt="">
+                  <div class="carousel-caption">
+                            <h3></h3>
+                            <br class="hidden-xs"><br>
+                          <p class="hidden-xs"> </p>
+                          <div class="banner_mouseover-wrap " > <a href="tury_ukraine/splav/index-ukraine-splav.html" class="banner-hover-link " role="button">Интересно <i class="fa fa-arrow-right"></i></a> </div>
+                  </div>
+              </div>
+                
+              </div>
+                <!-- Arrow slider-->
+              <a href="#carousel-2" class="left carousel-control" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a href="#carousel-2" class="right carousel-control" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" ></span>
+              </a>
+              </div>
+
+            </div>
+            <br class="hidden-md hidden-lg">
+       
+              
+<!--End Slider left-->
+
+  
+        
+            <div class="col-md-6 col-lg-6">   
+              <div id="carousel-3" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                  <li *ngFor="let image of imagesRight ;let i = index" [ngClass]="{active : (image.index === 1)}" data-target="#carousel-3"  [attr.data-slide-to]="i" > </li>
+                </ol>   
+              <div class="carousel-inner" role="listbox">
+              <div  *ngFor="let image of imagesRight" [ngClass]="{item: true, active : (image.index === 1)}">
+                  <img [src]="image.url" alt="">
+                  <div class="carousel-caption">
+                            <h3></h3>
+                            <br class="hidden-xs"><br>
+                          <p class="hidden-xs"> </p>
+                          <div class="banner_mouseover-wrap " > <a href="tury_ukraine/splav/index-ukraine-splav.html" class="banner-hover-link " role="button">Интересно <i class="fa fa-arrow-right"></i></a> </div>
+                  </div>
+              </div>
+                
+              </div>
+                <!-- Arrow slider-->
+              <a href="#carousel-3" class="left carousel-control" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a href="#carousel-3" class="right carousel-control" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" ></span>
+              </a>
+              </div>
+
+            </div>
+        </div>
+    </div>
+<!--End Slider right-->
+<!-- Search tour -->
+
+<div class="container-fluid">
+    <div class="row img-search-tur ">
+        <div class="col-xs-12 text_abrod">
+        <a href="tyru_abroad_sea/index-abrod.html"> <img src="assets/images/search_tour.png" class="img-responsive" alt=""></a>
+        </div>
+    </div>
+</div>

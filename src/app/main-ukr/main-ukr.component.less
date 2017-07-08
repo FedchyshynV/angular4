@@ -1,0 +1,107 @@
+@color-white: #ffffff;
+@color-black: black;
+@color-hover-button: rgba(255,255,255, 0.9);
+@color-backgroung-button: rgba(33,33,33,0.4);
+@color-main-back: #1B1D1E;
+
+.header_ukrain {
+        h2{
+            font-weight: 600;
+            font-family: 'Open Sans', sans-serif;
+            color: @color-white;
+        }   
+
+}
+.banner-hover-link {
+    color: @color-white;
+    font-size: 17px;
+    line-height: 50px;
+    width: 40%;
+    height: 50px;
+    white-space: nowrap;
+    border: 1px solid @color-black;
+    outline-color: @color-white;
+    outline-style: solid;
+    outline-width: 2px;
+    padding: 10px 30px;
+    position: relative;
+    pointer-events: auto;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    background: @color-backgroung-button;
+    -webkit-transition: background-color 0.3s,color 0.3s;
+    transition: background-color 0.3s,color 0.3s;
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+.banner-hover-link:hover {
+    background-color: desaturate(spin(@color-hover-button, 18), 12%);
+    color: @color-black;
+    text-decoration: none;
+    transition-duration: 1.5s;
+    outline-color: @color-white;
+    outline-style: solid;
+    outline-width: 2px;
+}
+.banner_mouseover-wrap{
+    animation-name: banner-animation;
+    animation-duration: 0.2s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+.thumbnail{
+    padding: 0;
+    border: 0;
+    background: @color-main-back;
+    margin-bottom: 0;
+}
+
+div.mybtn{
+    text-align: center;
+    vertical-align: middle;
+    margin-top: -5em;
+}
+
+/* MDB HOVER EFFECTS */
+.view {
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+}
+
+.view img {
+  display: block;
+  position: relative;
+}
+.hm-zoom{
+  margin-bottom: 1em;
+}
+.hm-zoom img {
+  transition: all 0.2s linear;
+}
+
+.hm-zoom:hover img {
+  transform: translateY(-70px);
+ }
+
+.hm-zoom .mybtn {
+  opacity: 0;
+}
+.hm-zoom:hover .mybtn {
+  opacity: 1;
+}
+
+.header_ukrain_buttom{
+
+  margin-top: -20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+
+
